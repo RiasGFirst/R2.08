@@ -24,7 +24,7 @@ def aide():
     exit(-1)
 
 
-if __name__ == '__main__':
+def start_find2():
     if len(sys.argv) <= 1:
         aide()
     else:
@@ -38,3 +38,7 @@ if __name__ == '__main__':
             affiche(fichiers, dossiers)
         else:
             aide()
+
+
+if __name__ == '__main__':
+    start_find2()

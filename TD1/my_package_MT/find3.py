@@ -23,7 +23,7 @@ def aide():
     exit(-1)
 
 
-if __name__ == '__main__':
+def start_find3():
     if len(sys.argv) <= 2:
         aide()
     listeFinded = []
@@ -32,5 +32,8 @@ if __name__ == '__main__':
     if len(dossiers) > 0:
         for dossier in dossiers:
             fichiers, dossiers = recherche(f"{dossier}", sys.argv[2], fichiers, dossiers)
-
     affiche(fichiers)
+
+
+if __name__ == '__main__':
+    start_find3()

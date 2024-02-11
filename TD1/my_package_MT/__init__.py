@@ -1,0 +1,1 @@
+print("Bienvenue dans le package my_package_MT!")
