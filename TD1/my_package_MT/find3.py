@@ -35,5 +35,5 @@ def start_find3():
     affiche(fichiers)
 
 
-if __name__ == '__main__':
-    start_find3()
+#if __name__ == '__main__':
+start_find3()
