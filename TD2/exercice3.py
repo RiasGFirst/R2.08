@@ -30,11 +30,11 @@ def lecture3(name):
         with open(name, "r") as fichier:
             for line in fichier:
                 for word in line.split():
-                    regex = re.compile("^([+-]?[0-9]+\.?[0-9]*)$")
+                    regex = re.compile("^([+-]?\d+\.?\d*)$")
                     if regex.match(word) is not None:
-                        print("C’est un ???.")
+                        print(f"Le mot {word} est un nombre.")
                     else:
-                        print("Ce n’est pas un ????.")
+                        print(f"Le mot {word} n'est pas un nombre.")
     except FileNotFoundError:
         return f"Le fichier {name} n'a pas été trouvé."
     except PermissionError:
