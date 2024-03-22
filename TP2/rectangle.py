@@ -1,11 +1,20 @@
 
 class Rectangle:
     def __init__(self, width, height):
-        self.width = width
-        self.height = height
+        self.width = None
+        self.height = None
+        try:
+            if int(width) and int(height):
+                print("Les valeurs sont des entiers")
+                self.width = width
+                self.height = height
+        except ValueError:
+            print("Les valeurs ne sont pas des entiers")
 
     def __str__(self):
-        return f"Rectangle(width={self.width}, height={self.height})"
+        if self.width is not None and self.height is not None:
+            return f"Rectangle(width={self.width}, height={self.height})"
+        return "Error: width or height is not set"
 
     def set_width(self, width):
         if width < 0:

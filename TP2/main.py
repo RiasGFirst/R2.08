@@ -1,6 +1,6 @@
 from rectangle import Rectangle, Carree
 
-rect = Rectangle(10, 5)
+rect = Rectangle(4, 5)
 print(rect.get_area())
 rect.height=3
 print(rect.get_perimeter())
