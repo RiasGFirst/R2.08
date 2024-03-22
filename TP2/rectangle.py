@@ -34,6 +34,7 @@ class Rectangle:
     def get_amount_inside(self, shape):
         return self.get_area() // shape.get_area()
 
+
 class Carree(Rectangle):
     def __init__(self, side):
         super().__init__(side, side)
