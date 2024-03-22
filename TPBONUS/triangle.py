@@ -1,5 +1,6 @@
 from point import Point
 
+
 class Triangle_rectangle:
 
         def __init__(self, cote1, cote2, point):
